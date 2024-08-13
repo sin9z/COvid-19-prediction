@@ -6,9 +6,9 @@ from flask import Flask, render_template, request
 
 app = Flask(__name__)
 
-#UPLOAD_FOLDER = 'C:\Aaishni Study Courses\IIT Bombay courses\D-E placement courses\Data Science\Covid 19 detection using CT scans Project\Project\static'
-#ALLOWED_EXTENSIONS = set(['png'])
-#app.config['UPLOAD_FOLDER'] = UPLOAD_FOLDER
+UPLOAD_FOLDER = 'C:\Aaishni\Data Science\Covid 19 detection using CT scans Project\Project\static'
+ALLOWED_EXTENSIONS = set(['png'])
+app.config['UPLOAD_FOLDER'] = UPLOAD_FOLDER
 
 @app.route('/')
 def home():
